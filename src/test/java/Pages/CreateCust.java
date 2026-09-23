@@ -46,8 +46,8 @@ public class CreateCust {
 		wait.visisble(phone).sendKeys(Ph);
 		wait.visisble(email).sendKeys(email1);
 		wait.visisble(submit).click();
-		String CustomerAlert=driver.switchTo().alert().getText();
-		System.out.println(CustomerAlert);
+	//	String CustomerAlert=driver.switchTo().alert().getText();
+	//	System.out.println(CustomerAlert);
 	}
 
 }
