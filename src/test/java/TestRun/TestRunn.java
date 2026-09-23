@@ -22,17 +22,13 @@ public class TestRunn extends BaseTest{
 	    String Path = System.getProperty("user.dir")
 	            + "/src/test/resources/Testdata/data.xlsx";
 		return ExcelUtils.Utils(Path, "Sheet1");
-		
-		
+				
 	}
-	
-
-	
-	
-	@Test (priority=2,enabled=false)
+	@Test (priority=2)
 	public void CreateCustomer() {
 		CreateCust cust= new CreateCust(driver);
-		cust.CreateNewCust("Venu Undala", "17/06/1997", "Hyderabad,SRNAGAR", "Hyderabad", "Telangana", "518569", "9581215418", "venu@mimics.com");
+		cust.CreateNewCust("VenuUndala", "17/06/1997", "Hyderabad,SRNAGAR", "Hyderabad", "Telangan", "518569", "9581215418", "venu@mimics.com");
 	}
+
 
 }
